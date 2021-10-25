@@ -1,0 +1,28 @@
+{
+  "name": "hello-ethereum",
+  "version": "1.0.0",
+  "description": "Learning about working with smart contracts on the Ethereum chain with [buildspace](https://buildspace.so/)! Connect your wallet to interact with the dapp.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamalexali/hello-ethereum.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamalexali/hello-ethereum/issues"
+  },
+  "homepage": "https://github.com/adamalexali/hello-ethereum#readme",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.1",
+    "hardhat": "^2.6.7"
+  }
+}
