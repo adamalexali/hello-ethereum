@@ -1,28 +1,41 @@
 const main = async () => {
-  const [owner, randomPerson] = await hre.ethers.getSigners();
-
   // complies contract and generates files in the artifacts/ directory
-  const myContractFactory = await hre.ethers.getContractFactory('HelloEther');
+  const myContractFactory = await hre.ethers.getContractFactory(
+    'HelloEthereum'
+  );
 
   // Hardhat will create a local blockchain to work on and debug in
-  const myContract = await myContractFactory.deploy();
+  const myContract = await myContractFactory.deploy({
+    value: hre.ethers.utils.parseEther('0.1'),
+  });
   await myContract.deployed();
   console.log('Contract deployed to:', myContract.address);
-  console.log('Contract deployed by:', owner.address);
 
-  // manually calling the functions of the HelloEther.sol contract
-  let interactCount;
-  interactCount = await myContract.getTotalInteracts();
+  // get contract balance before
+  let contractBalance = await hre.ethers.provider.getBalance(
+    myContract.address
+  );
+  console.log(
+    'Contract balance:',
+    hre.ethers.utils.formatEther(contractBalance)
+  );
 
-  let interactTxn = await myContract.interact();
-  await interactTxn.wait();
+  // send interaction
+  let interactTxn = await myContract.interact('First interaction');
+  await interactTxn.wait(); // wait for the transaction to be mined
 
-  interactCount = await myContract.getTotalInteracts();
+  let interactTxn2 = await myContract.interact('Second interaction');
+  await interactTxn2.wait(); // wait for the transaction to be mined
 
-  interactTxn = await myContract.connect(randomPerson).interact();
-  await interactTxn.wait();
+  // get contract balance after
+  contractBalance = await hre.ethers.provider.getBalance(myContract.address);
+  console.log(
+    'Contract balance:',
+    hre.ethers.utils.formatEther(contractBalance)
+  );
 
-  interactCount = await myContract.getTotalInteracts();
+  let allInteractions = await myContract.getAllInteractions();
+  console.log(allInteractions);
 };
 
 const runMain = async () => {
