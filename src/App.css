@@ -1,0 +1,90 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-weight: 400;
+}
+
+body {
+  margin: 2rem;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.subheader {
+  text-align: center;
+  color: gray;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.InteractButton {
+  cursor: pointer;
+  padding: 8px;
+  border: 0;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  min-width: 150px;
+  align-self: center;
+  background-color: #007bff;
+  color: white;
+  font-weight: 800;
+}
+
+#msgTextArea {
+  margin: 1rem 0;
+  min-width: 300px;
+  align-self: center;
+}
+
+div.messageCard {
+  background-color: #f7f7f7;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+h3,
+h4 {
+  font-size: 0.75rem;
+}
+
+.address {
+  color: #00a86b;
+  /* font-weight: 800; */
+}
+
+a {
+  /* text-decoration: none; */
+  /* color: black; */
+  text-decoration-style: dotted;
+}
+
+.timestamp {
+  color: gray;
+  margin: 0.5rem 0 1rem 0;
+}

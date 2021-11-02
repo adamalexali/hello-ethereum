@@ -1,15 +1,5 @@
-# Basic Sample Hardhat Project
+# Hello Ethereum
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+A simple React front-end to connect to the smart contract I built. It allows users to connect their wallet and post messages on a feed.
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+This was mostly a testing/learning project; but more features might be fun & fulfilling to implement :)
