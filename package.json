@@ -13,20 +13,21 @@
   "bugs": {
     "url": "https://github.com/adamalexali/hello-ethereum/issues"
   },
-  "homepage": "https://github.com/adamalexali/hello-ethereum#readme",
+  "homepage": "https://adamalexali.github.io/hello-ethereum/",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
     "chai": "^4.3.4",
     "ethereum-waffle": "^3.4.0",
     "ethers": "^5.5.1",
+    "gh-pages": "^3.2.3",
     "hardhat": "^2.6.7"
   },
   "dependencies": {
-    "dotenv": "^10.0.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "dotenv": "^10.0.0",
     "ethers": "^5.4.4",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -36,7 +37,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
