@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/hello-ethereum/static/css/main.42e3d32a.chunk.css",
+    "main.js": "/hello-ethereum/static/js/main.8008921f.chunk.js",
+    "main.js.map": "/hello-ethereum/static/js/main.8008921f.chunk.js.map",
+    "runtime-main.js": "/hello-ethereum/static/js/runtime-main.bcce053b.js",
+    "runtime-main.js.map": "/hello-ethereum/static/js/runtime-main.bcce053b.js.map",
+    "static/js/2.745ab055.chunk.js": "/hello-ethereum/static/js/2.745ab055.chunk.js",
+    "static/js/2.745ab055.chunk.js.map": "/hello-ethereum/static/js/2.745ab055.chunk.js.map",
+    "index.html": "/hello-ethereum/index.html",
+    "precache-manifest.0f172fa16c57f834901e6a35e2029b29.js": "/hello-ethereum/precache-manifest.0f172fa16c57f834901e6a35e2029b29.js",
+    "service-worker.js": "/hello-ethereum/service-worker.js",
+    "static/css/main.42e3d32a.chunk.css.map": "/hello-ethereum/static/css/main.42e3d32a.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bcce053b.js",
+    "static/js/2.745ab055.chunk.js",
+    "static/css/main.42e3d32a.chunk.css",
+    "static/js/main.8008921f.chunk.js"
+  ]
+}
